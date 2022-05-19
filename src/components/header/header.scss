@@ -84,17 +84,6 @@
   }
 }
 
-.social-icons {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  &__link {
-    display: flex;
-    margin-right: 15px;
-  }
-}
-
 .header-right {
   display: flex;
   align-items: center;
@@ -108,5 +97,8 @@
     border-radius: 50%;
     cursor: pointer;
     margin-right: 16px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

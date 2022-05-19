@@ -1,0 +1,19 @@
+.social-icons {
+  max-width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__link {
+    display: flex;
+    margin-right: 18px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link--mr {
+    margin-right: 15px;
+  }
+}

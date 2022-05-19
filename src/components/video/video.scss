@@ -1,0 +1,12 @@
+.vidio {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.vidio:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 74px;
+  border-bottom: 5px solid #e33e54;
+}

@@ -1,3 +1,4 @@
+include ../../views/helpers/mixins
 header.header 
   a.header__logo
    img(src="../assets/images/logo.svg", alt="logo")
@@ -20,17 +21,8 @@ header.header
   a.tel(href="tel:+8495234-22-44" class="tel") <span>+7 (812)</span> 509 21 98
 
   div.popap Перезвоните мне
-
-
-  div.social-icons
-    a.social-icons__link(href="") 
-     img(src="../assets/images/vk.svg", alt="vk")
-    a.social-icons__link(href="") 
-     img(src="../assets/images/telegram.svg", alt="telegram")
-    a.social-icons__link(href="")
-     img(src="../assets/images/instagram.svg", alt="instagram")
-    a.social-icons__link(href="") 
-     img(src="../assets/images/whatsapp.svg", alt="whatsapp")
+ 
+  +socialIcons    
  
   div.header-right
     div.header-right__icon 
@@ -38,4 +30,4 @@ header.header
     div.header-right__icon 
      img(src="../../assets/images/likes.svg", alt="likes")
     div.header-right__icon
-     img(src="../../assets/images/cart.svg", alt="cart")  
+     img(src="../../assets/images/cart.svg", alt="cart") 

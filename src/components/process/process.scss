@@ -1,0 +1,44 @@
+.process {
+  position: relative;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.process-list {
+  padding: 20px 0 0 0;
+  list-style-type: none;
+  counter-reset: list;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 35px 0 35px 65px;
+  }
+  &__item:before {
+    display: block;
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 85px;
+    color: #e33e54;
+    opacity: 0.2;
+  }
+}
+
+.process:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 74px;
+  border-bottom: 5px solid #e33e54;
+}
+
+//content: counter(li);
+
+//counter-increment: li;
