@@ -1,18 +1,19 @@
 - 
   var iconsPaths = [
-      {imgPath:"../assets/images/vk.svg",altName:'vk'},
-      {imgPath:"../assets/images/telegram.svg",altName:'telegram'},
-      {imgPath:"../assets/images/instagram.svg",altName:'instagram'},
-      {imgPath:"../assets/images/whatsapp.svg",altName:'whatsapp'}
+      {imgPath:"/assets/images/sprite.svg#vk", class:"vk"},
+      {imgPath:"/assets/images/sprite.svg#telegram", class:"telegram"},
+      {imgPath:"/assets/images/sprite.svg#instagram", class:"instagram"},
+      {imgPath:"/assets/images/sprite.svg#whatsapp", class:"whatsapp"},
      ]
 
-mixin socialIcons(padding,margin)
+mixin socialIcons(padding,margin,orange)
   div(class="social-icons" + " " + padding)
        for i in iconsPaths 
           a(class="social-icons__link" + " " + margin)(href="") 
-            img(src=i.imgPath, alt=i.altName)
-      
-
+            svg(class=i.class + " " + orange) 
+               use(xlink:href=i.imgPath)
+          
+  
 
 
 

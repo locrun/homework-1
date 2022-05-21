@@ -1,20 +1,12 @@
-.features {
+.benefits {
   max-width: 1220px;
   margin: 0 auto;
   padding: 60px 0 60px 0;
-}
-.features:before {
-  position: absolute;
-  display: block;
-  content: '';
-  width: 74px;
-  border-bottom: 5px solid #e33e54;
-}
 
-.card {
-  display: flex;
-  justify-content: space-between;
-
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
   &__title {
     font-weight: 700;
     font-size: 20px;
@@ -31,9 +23,16 @@
       font-size: 16px;
       color: #e33e54;
     }
-  }
 
-  &__img {
-    margin-bottom: 10px;
+    &__img {
+      margin-bottom: 10px;
+    }
   }
+}
+.benefits:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 74px;
+  border-bottom: 5px solid #e33e54;
 }

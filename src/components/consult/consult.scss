@@ -81,5 +81,10 @@
     background: #215359;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  &__button:hover {
+    background: #248d98;
+    transition: all 0.3s ease-in-out;
   }
 }

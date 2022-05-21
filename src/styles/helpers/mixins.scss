@@ -1,9 +1,9 @@
 .social-icons {
-  max-width: 120px;
+  width: 120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 60px;
+  //margin-right: 0;
 
   &__link {
     display: flex;
@@ -19,6 +19,13 @@
 
   &--pd-top {
     padding-top: 26px;
+    width: 200px;
+  }
+  &--mr60 {
+    margin-right: 60px;
+  }
+  &--width {
+    width: auto;
   }
 }
 
@@ -48,6 +55,17 @@
     text-decoration: none;
     color: #4c858b;
   }
+  &__link:after {
+    background-color: #4c858b;
+    display: block;
+    content: '';
+    height: 2px;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+  }
+  &__link:hover:after {
+    width: 100%;
+  }
 }
 
 .group {
@@ -67,4 +85,56 @@
       margin-right: 0;
     }
   }
+}
+
+.vk {
+  fill: #4c858b;
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.vk:hover {
+  fill: #30b6c5;
+  transition: all 0.3s ease-in-out;
+}
+
+.telegram {
+  fill: #4c858b;
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.telegram:hover {
+  fill: #30b6c5;
+  transition: all 0.3s ease-in-out;
+}
+
+.instagram {
+  fill: #4c858b;
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.instagram:hover {
+  fill: #30b6c5;
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp {
+  fill: #4c858b;
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp:hover {
+  fill: #30b6c5;
+  transition: all 0.3s ease-in-out;
+}
+.orange {
+  fill: #ea6628;
+}
+.orange:hover {
+  fill: #ff5202b7;
 }

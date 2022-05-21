@@ -27,24 +27,32 @@
   }
 }
 
-.popap {
+.popup {
   position: relative;
   font-weight: 700;
   color: #ae2236;
   text-transform: uppercase;
   cursor: pointer;
   margin-right: 60px;
+  transition: all 0.3s ease-in-out;
 }
-.popap:after {
+.popup:hover {
+  color: #e42844;
+  transition: all 0.3s ease-in-out;
+}
+.popup:after {
   display: block;
   content: '';
   position: absolute;
   width: 100%;
   padding-top: 5px;
   border-bottom: 1px dashed #ae2236;
-  //cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
-
+.popup:hover:after {
+  border-bottom: 1px dashed #e42844;
+  transition: all 0.3s ease-in-out;
+}
 .tel {
   text-decoration: none;
   font-size: 16px;
