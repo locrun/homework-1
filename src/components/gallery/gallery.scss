@@ -1,0 +1,56 @@
+.gallery {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-bottom: 130px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    margin-bottom: 30px;
+    position: relative;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
+    cursor: pointer;
+  }
+  &__img:after {
+    display: block;
+    content: '';
+    position: absolute;
+    border-left: 4px solid #4c858b;
+    border-bottom: 4px solid #4c858b;
+    width: 50px;
+    height: 50px;
+    bottom: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  &__img:before {
+    display: block;
+    content: '';
+    position: absolute;
+    border-right: 4px solid #4c858b;
+    border-top: 4px solid #4c858b;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  &__img:hover:after {
+    border-left: 4px solid #ea6628;
+    border-bottom: 4px solid #ea6628;
+    transition: all 0.3s ease-in-out;
+  }
+  &__img:hover:before {
+    border-right: 4px solid #ea6628;
+    border-top: 4px solid #ea6628;
+    transition: all 0.3s ease-in-out;
+  }
+}
+.gallery:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 74px;
+  border-bottom: 5px solid #e33e54;
+}

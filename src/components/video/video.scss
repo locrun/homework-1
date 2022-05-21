@@ -2,6 +2,15 @@
   max-width: 1220px;
   margin: 0 auto;
   padding: 100px 0;
+
+  &__player-block {
+    display: flex;
+    justify-content: center;
+    background-image: url('../../assets/images/blob2.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 50px;
+  }
 }
 .vidio:before {
   position: absolute;

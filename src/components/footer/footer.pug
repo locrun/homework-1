@@ -1,1 +1,41 @@
+- 
+  var catalog = [
+      {link:"#",name:'Дымоходы'},{link:"#",name:'Дымососы'},
+      {link:"#",name:'Печи для дома'},{link:"#",name:'Печи для бани'},
+      {link:"#",name:'Камины'},{link:"#",name:'Селикат кальция'},
+      {link:"#",name:'Котлы'},{link:"#",name:'Еще'},
+    ]
+- 
+  var info = [
+      {link:"#",name:'Каталог'},{link:"#",name:' Установка и монтаж'},
+      {link:"#",name:'Отзывы'},{link:"#",name:'Ликвидация товара'},
+      {link:"#",name:'Полезное'},{link:"#",name:'Контакты'},
+      {link:"#",name:'Оплата и доставка'}
+    ]  
+      
+footer.footer
+  div.footer__container
+   div.footer__list-wrapper
+    h3.footer__title Каталог
+    ul.footer__list 
+     for i in catalog
+       li.footer__list-item 
+         a(href=i.link).footer__list-item-link=i.name 
 
+   div.footer__list-wrapper
+    h3.footer__title Информация
+    ul.footer__list
+      for i in info
+       li.footer__list-item 
+         a(href=i.link).footer__list-item-link=i.name 
+
+   div.footer__contacts
+     h3.footer__title Время работы
+     div.footer__contacts-work-time <span>пн-пт</span>9:00 – 20:00  <span>сб-вс</span> 10:00 – 18:00
+     div.footer__contacts-address <span>г.  Санкт - Петербург</span> ,ул. Тамбасова д.7
+     
+     include ../../views/helpers/mixins
+     +socialIcons('social-icons--pd-top','social-icons__link--mr')
+        
+  
+     
