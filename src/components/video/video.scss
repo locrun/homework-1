@@ -1,21 +1,26 @@
 .vidio {
   max-width: 1220px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding-top: 87px;
+  padding-bottom: 40px;
+  position: relative;
 
   &__player-block {
     display: flex;
     justify-content: center;
     background-image: url('../../assets/images/blob2.svg');
     background-repeat: no-repeat;
-    background-position: top;
-    padding-top: 50px;
+    background-position: 48px -2px;
+    padding-top: 47px;
+    margin-left: -13px;
   }
 }
 .vidio:before {
   position: absolute;
   display: block;
   content: '';
+  top: 78px;
+  left: 1px;
   width: 74px;
   border-bottom: 5px solid #e33e54;
 }

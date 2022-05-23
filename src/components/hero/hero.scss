@@ -1,7 +1,9 @@
 .hero {
   max-width: 1220px;
   margin: 0 auto;
-  padding-bottom: 60px;
+  padding-top: 33px;
+  padding-bottom: 30px;
+
   &__content {
     display: flex;
   }
@@ -11,16 +13,17 @@
   }
 
   &__list {
-    padding-left: 30px;
+    padding-left: 33px;
     margin-top: 40px;
   }
-  &__list-item {
+  &__item {
     list-style-type: none;
     padding-bottom: 30px;
     padding-left: 25px;
     position: relative;
+    line-height: 1.2;
   }
-  &__list-item:before {
+  &__item:before {
     position: absolute;
     content: '';
     width: 9px;
@@ -39,40 +42,19 @@
   &__img {
     position: absolute;
     top: -30px;
+    left: 18px;
   }
 }
 
-.title {
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 73px;
-  color: #000000;
-  &--red {
-    margin: 0;
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 63px;
-    text-transform: uppercase;
-    color: #e33e54;
-  }
-}
-.section-title {
-  margin: 0;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 63px;
-  color: #000000;
-}
 .breadcrumbs {
   width: 100%;
-  margin: 0;
-  padding: 0;
+  padding: 15px 0;
+  margin: 30px 0;
+  margin-top: 37px;
   list-style-type: none;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   display: flex;
-  padding: 15px 0;
-  margin-bottom: 30px;
 
   &__item {
     font-style: normal;
@@ -81,7 +63,7 @@
     line-height: 15px;
     margin-right: 20px;
     position: relative;
-
+    letter-spacing: 0.3px;
     &:last-child {
       margin-right: 0;
     }
@@ -98,31 +80,12 @@
     content: '';
   }
 
-  &__item-link {
+  &__link {
     text-decoration: none;
     color: #b1b1b1;
 
-    &.active {
+    &--active {
       color: #4c858b;
     }
-  }
-}
-
-.subtitle {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
-
-  span {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 30px;
-    text-align: left;
-    color: #e33e54;
   }
 }

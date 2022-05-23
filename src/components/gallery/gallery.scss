@@ -1,7 +1,11 @@
 .gallery {
   max-width: 1220px;
   margin: 0 auto;
-  padding-bottom: 130px;
+  position: relative;
+
+  padding-top: 55px;
+  padding-bottom: 98px;
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -37,13 +41,13 @@
     transition: all 0.3s ease-in-out;
   }
   &__img:hover:after {
-    border-left: 4px solid #ea6628;
-    border-bottom: 4px solid #ea6628;
+    border-left: 4px solid #30b6c5;
+    border-bottom: 4px solid #30b6c5;
     transition: all 0.3s ease-in-out;
   }
   &__img:hover:before {
-    border-right: 4px solid #ea6628;
-    border-top: 4px solid #ea6628;
+    border-right: 4px solid #30b6c5;
+    border-top: 4px solid #30b6c5;
     transition: all 0.3s ease-in-out;
   }
 }
@@ -51,6 +55,8 @@
   position: absolute;
   display: block;
   content: '';
+  top: 43px;
+  left: 2px;
   width: 74px;
   border-bottom: 5px solid #e33e54;
 }

@@ -1,8 +1,14 @@
 .footer {
   width: 100%;
-  padding: 90px 0;
+  padding: 65px 0;
   background-color: #0c2f33;
+  &__list-wrapper {
+    width: 400px;
 
+    &--ml10 {
+      margin-left: 24px;
+    }
+  }
   &__container {
     max-width: 1220px;
     margin: 0 auto;
@@ -11,22 +17,24 @@
   }
   &__title {
     font-weight: 700;
+    margin-bottom: 21px;
     font-size: 22px;
     line-height: 27px;
     color: #ffffff;
+    text-transform: uppercase;
   }
 
   &__list {
-    width: 400px;
     padding: 0;
     list-style-type: none;
     columns: 2;
   }
 
-  &__list-item {
+  &__item {
     margin-bottom: 20px;
+    margin-bottom: 17px;
   }
-  &__list-item-link {
+  &__link {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -39,11 +47,13 @@
   }
 
   &__contacts {
+    margin-left: 56px;
+    margin-right: 24px;
   }
 
   &__contacts-work-time {
     padding-left: 13px;
-    margin-bottom: 18px;
+    margin-bottom: 11px;
     font-family: Lato, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -73,7 +83,8 @@
     background-position: left;
 
     span {
-      margin-left: 10px;
+      margin-left: 9px;
+      margin-right: 5px;
       font-family: Lato, sans-serif;
       font-style: normal;
       font-weight: 400;

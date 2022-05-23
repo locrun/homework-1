@@ -1,33 +1,22 @@
-- 
-  var catalog = [
-      {link:"#",name:'Дымоходы'},{link:"#",name:'Дымососы'},
-      {link:"#",name:'Печи для дома'},{link:"#",name:'Печи для бани'},
-      {link:"#",name:'Камины'},{link:"#",name:'Селикат кальция'},
-      {link:"#",name:'Котлы'},{link:"#",name:'Еще'},
-    ]
-- 
-  var info = [
-      {link:"#",name:'Каталог'},{link:"#",name:' Установка и монтаж'},
-      {link:"#",name:'Отзывы'},{link:"#",name:'Ликвидация товара'},
-      {link:"#",name:'Полезное'},{link:"#",name:'Контакты'},
-      {link:"#",name:'Оплата и доставка'}
-    ]  
-      
+block variables
+
+
 footer.footer
   div.footer__container
+    
    div.footer__list-wrapper
     h3.footer__title Каталог
     ul.footer__list 
      for i in catalog
-       li.footer__list-item 
-         a(href=i.link).footer__list-item-link=i.name 
-
-   div.footer__list-wrapper
+       li.footer__item 
+         a(href=i.link).footer__link=i.name 
+ 
+   div.footer__list-wrapper.footer__list-wrapper--ml10
     h3.footer__title Информация
     ul.footer__list
       for i in info
-       li.footer__list-item 
-         a(href=i.link).footer__list-item-link=i.name 
+       li.footer__item 
+         a(href=i.link).footer__link=i.name 
 
    div.footer__contacts
      h3.footer__title Время работы

@@ -1,7 +1,7 @@
 .header {
   max-width: 1785px;
   margin: 0 auto;
-  padding-top: 25px;
+  padding: 20px 0;
   display: flex;
   align-items: center;
 
@@ -30,10 +30,13 @@
 .popup {
   position: relative;
   font-weight: 700;
-  color: #ae2236;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
   text-transform: uppercase;
+  color: #ae2236;
   cursor: pointer;
-  margin-right: 60px;
+  margin-right: 64px;
   transition: all 0.3s ease-in-out;
 }
 .popup:hover {
@@ -59,8 +62,8 @@
   font-weight: 700;
   line-height: 20px;
   color: #000000;
-  margin-right: 70px;
-
+  margin-right: 72px;
+  letter-spacing: 1.2px;
   span {
     font-weight: 400;
     font-size: 16px;
@@ -68,4 +71,9 @@
     letter-spacing: 0.08em;
     color: #4c858b;
   }
+}
+.menu {
+  width: 22px;
+  height: 22px;
+  fill: #4c858b;
 }

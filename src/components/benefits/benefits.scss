@@ -1,17 +1,27 @@
 .benefits {
   max-width: 1220px;
   margin: 0 auto;
-  padding: 60px 0 60px 0;
+  padding: 38px 0 28px 0;
+  position: relative;
 
   &__list {
     display: flex;
     justify-content: space-between;
   }
+  &__item {
+    margin-right: 10px;
+
+    &--ml61 {
+      margin-left: 61px;
+    }
+  }
+
   &__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
     color: #000000;
+    letter-spacing: 0.9px;
   }
   &__subtitle {
     font-weight: 400;
@@ -34,5 +44,33 @@
   display: block;
   content: '';
   width: 74px;
+  top: 30px;
+  left: 4px;
   border-bottom: 5px solid #e33e54;
+}
+
+.warranty {
+  width: 79px;
+  height: 79px;
+  fill: #4c858b;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+.help {
+  width: 78px;
+  height: 78px;
+  fill: #4c858b;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+.review {
+  width: 77px;
+  height: 77px;
+  fill: #4c858b;
+  margin-top: 5px;
+  margin-bottom: 13px;
+}
+
+.subtitle-wrapper {
+  margin-top: -12px;
 }
