@@ -1,13 +1,14 @@
 block variables
+  - var mobile = 'Оставить заявку'
+  - var desktop = 'Отправить'
 
-mixin socialIcons(padding,margin,orange)
-  div(class="social-icons" + " " + padding)
+mixin socialIcons(padding,margin,orange,show,hide)
+  div(class="social-icons" + " " + padding + " " + show + " " + hide)
        for i in iconsPaths 
-          a(class="social-icons__link" + " " + margin)(href="") 
+          a(class="social-icons__link" + " " + margin)(href="#" target="_blank") 
             svg(class=i.class + " " + orange) 
                use(xlink:href=i.imgPath )
           
-  
-
-
-
+          
+mixin formButton(text)
+  button(class="form__button", type="submit")=text

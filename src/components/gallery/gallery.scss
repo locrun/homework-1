@@ -1,22 +1,67 @@
 .gallery {
-  max-width: 1220px;
-  margin: 0 auto;
-  position: relative;
+  padding-top: 30px;
+  padding-bottom: 46px;
 
-  padding-top: 55px;
-  padding-bottom: 98px;
+  @media (min-width: 768px) {
+    padding-top: 19px;
+    padding-bottom: 58px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 68px;
+    padding-bottom: 136px;
+  }
 
   &__container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: auto;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+    }
+
+    @media (min-width: 1300px) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 30px;
+    }
   }
 
   &__img {
-    margin-bottom: 30px;
     position: relative;
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
     cursor: pointer;
+    width: 130px;
+    height: 120px;
+    margin-bottom: 15px;
+
+    @media (min-width: 768px) {
+      width: 226px;
+      height: 208px;
+      margin-bottom: 0px;
+    }
+
+    @media (min-width: 1920px) {
+      width: 282px;
+      height: 260px;
+    }
+
+    img {
+      width: 130px;
+      height: 120px;
+
+      @media (min-width: 768px) {
+        width: 226px;
+        height: 208px;
+      }
+      @media (min-width: 1920px) {
+        width: 282px;
+        height: 260px;
+      }
+    }
+    a {
+      display: inline-block;
+    }
   }
   &__img:after {
     display: block;
@@ -24,10 +69,15 @@
     position: absolute;
     border-left: 4px solid #4c858b;
     border-bottom: 4px solid #4c858b;
-    width: 50px;
-    height: 50px;
-    bottom: 3px;
+    width: 30px;
+    height: 30px;
+    bottom: 0px;
     transition: all 0.3s ease-in-out;
+    @media (min-width: 768px) {
+      width: 50px;
+      height: 50px;
+      bottom: 0px;
+    }
   }
   &__img:before {
     display: block;
@@ -35,10 +85,16 @@
     position: absolute;
     border-right: 4px solid #4c858b;
     border-top: 4px solid #4c858b;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     right: 0;
     transition: all 0.3s ease-in-out;
+
+    @media (min-width: 768px) {
+      width: 50px;
+      height: 50px;
+      right: 0px;
+    }
   }
   &__img:hover:after {
     border-left: 4px solid #30b6c5;
@@ -50,13 +106,4 @@
     border-top: 4px solid #30b6c5;
     transition: all 0.3s ease-in-out;
   }
-}
-.gallery:before {
-  position: absolute;
-  display: block;
-  content: '';
-  top: 43px;
-  left: 2px;
-  width: 74px;
-  border-bottom: 5px solid #e33e54;
 }

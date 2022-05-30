@@ -1,26 +1,52 @@
 .vidio {
-  max-width: 1220px;
-  margin: 0 auto;
-  padding-top: 87px;
+  padding-top: 33px;
   padding-bottom: 40px;
-  position: relative;
+
+  @media (min-width: 768px) {
+    padding-top: 38px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 87px;
+  }
 
   &__player-block {
     display: flex;
     justify-content: center;
-    background-image: url('../../assets/images/blob2.svg');
-    background-repeat: no-repeat;
-    background-position: 48px -2px;
-    padding-top: 47px;
-    margin-left: -13px;
+    align-items: center;
+
+    @media (min-width: 1200px) {
+      padding-top: 47px;
+      background-image: url('../../assets/images/blob2.svg');
+      background-repeat: no-repeat;
+      background-position: 34px -2px;
+      background-size: 1100px;
+    }
+    @media (min-width: 1920px) {
+      background-size: 1157px;
+    }
   }
 }
-.vidio:before {
+
+.iframe-wrapper {
+  width: 771px;
+  position: relative;
+  padding-bottom: 47.25%;
+  padding-top: 25px;
+  height: 0;
+
+  @media (min-width: 768px) {
+    padding-bottom: 53.5%;
+    margin-top: 16px;
+  }
+  @media (min-width: 1200px) {
+    padding-bottom: 34%;
+    margin-top: 0;
+  }
+}
+iframe {
   position: absolute;
-  display: block;
-  content: '';
-  top: 78px;
-  left: 1px;
-  width: 74px;
-  border-bottom: 5px solid #e33e54;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

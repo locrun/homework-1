@@ -1,16 +1,21 @@
-section.hero
+section.hero.container
   h1.title Монтаж дымоходов
   ul.breadcrumbs
    li.breadcrumbs__item
-    a.breadcrumbs__link(href="") Главная
-   li.breadcrumbs__item
-    a.breadcrumbs__link.breadcrumbs__link--active(href="") Монтаж дымоходов
-  p.subtitle В<span>Дымоход.ру</span> вам помогут как приобрести, так и установить дымоход любой конфигурации. В нашем монтажном отделе, состоящим из трёх бригад работают квалифицированные специалисты, которые ежегодно проходят курсы повышения квалификации.Все работы проводим качественно и аккуратно, в короткий срок и на совесть .
+    a.breadcrumbs__link(href="#") Главная
+   li.breadcrumbs__item.show-mobile
+    a.breadcrumbs__link(href="#") Каталог
+   li.breadcrumbs__item.show-mobile
+    a.breadcrumbs__link(href="#") Камины  
+   li.breadcrumbs__item.show-mobile.breadcrumbs__item--active Камины облицовки 
+   li.breadcrumbs__item.show-desktop.breadcrumbs__item--active Монтаж дымоходов
+   
+  p.subtitle В <span>Дымоход.ру</span> вам помогут как приобрести, так и установить дымоход любой конфигурации. В нашем монтажном отделе, состоящим из трёх бригад работают квалифицированные специалисты, которые ежегодно проходят курсы повышения квалификации. Все работы проводим качественно и аккуратно, в короткий срок и на совесть .
   
   div.hero__content 
     div.hero__content-block
-      h2.section-title Lorem ipsum dolor sit amet
-      h2.title.title--red Lorem ipsum
+      h2.section-title.section-title--hero-title Lorem ipsum dolor sit amet
+      span.title.title--red Lorem ipsum
       ul.hero__list
         li.hero__item Доступные цены
         li.hero__item Собственное производсвто  Дымоходов
@@ -20,8 +25,9 @@ section.hero
         li.hero__item Только русские квалифицированные специалисты
         li.hero__item Устанавливаем любые дымоходы всех производителей
     div.hero__img-wrapper
-      img.hero__img(src="../assets/images/blob.svg", alt="blob")
+      img.hero__img-blob(src="../assets/images/blob1.svg", alt="flue")
+      img.hero__img-flue(src="../assets/images/flue.png", alt="flue")
 
      
 
-      
+       

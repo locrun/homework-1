@@ -1,19 +1,32 @@
 .footer {
   width: 100%;
-  padding: 65px 0;
+  padding: 25px 0;
   background-color: #0c2f33;
+
+  @media (min-width: 1200px) {
+    padding: 65px 0;
+  }
+
   &__list-wrapper {
     width: 400px;
+    display: none;
+    @media (min-width: 1200px) {
+      display: block;
+    }
 
     &--ml10 {
       margin-left: 24px;
     }
   }
   &__container {
-    max-width: 1220px;
+    max-width: 1245px;
     margin: 0 auto;
+    padding: 0 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    @media (min-width: 1200px) {
+      justify-content: space-between;
+    }
   }
   &__title {
     font-weight: 700;
@@ -22,6 +35,10 @@
     line-height: 27px;
     color: #ffffff;
     text-transform: uppercase;
+    display: none;
+    @media (min-width: 1200px) {
+      display: block;
+    }
   }
 
   &__list {
@@ -47,8 +64,11 @@
   }
 
   &__contacts {
-    margin-left: 56px;
-    margin-right: 24px;
+    @media (min-width: 1200px) {
+      display: block;
+      margin-left: 56px;
+      margin-right: 24px;
+    }
   }
 
   &__contacts-work-time {
@@ -63,6 +83,10 @@
     background-image: url('../../assets/images/clock.svg');
     background-repeat: no-repeat;
     background-position: left;
+    display: none;
+    @media (min-width: 1200px) {
+      display: block;
+    }
 
     span {
       color: #4c858b;
@@ -81,6 +105,10 @@
     background-image: url('../../assets/images/place.svg');
     background-repeat: no-repeat;
     background-position: left;
+    display: none;
+    @media (min-width: 1200px) {
+      display: block;
+    }
 
     span {
       margin-left: 9px;
