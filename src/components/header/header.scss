@@ -74,6 +74,12 @@
   width: 90%;
   margin: 0 auto;
   border-bottom: 1px solid #e5e5e5;
+  @media (min-width: 768px) {
+    width: 96%;
+  }
+  @media (min-width: 1200px) {
+    border: none;
+  }
 }
 
 .popup {
