@@ -5,38 +5,38 @@ html(lang="ru")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge" )
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title #{title ? title : 'Заголовок страницы'}
+    title #{'Дымоход'}
     link(href="/assets/styles/main.css" rel="stylesheet")
   body
-    - 
+    -
       var navLinks = [
             { link: '#', name: 'Каталог товаров' },
             { link: '#', name: 'Доставка и оплата' },
             { link: '#', name: 'Цены' },
             { link: '#', name: 'Контакты' },
           ]
-    - 
+    -
       var groupIcons = [
         { pathName: '/assets/images/sprite.svg#search', class:"search"},
         { pathName: '/assets/images/sprite.svg#likes', class:"likes"},
         { pathName: '/assets/images/sprite.svg#cart', class:"cart", modifier:"group__icon--label"},
-        ]; 
+        ];
 
-    - 
+    -
       var iconsPaths = [
           {imgPath:"/assets/images/sprite.svg#vk", class:"vk"},
           {imgPath:"/assets/images/sprite.svg#telegram", class:"telegram"},
           {imgPath:"/assets/images/sprite.svg#instagram", class:"instagram"},
           {imgPath:"/assets/images/sprite.svg#whatsapp", class:"whatsapp"},
-        ]  
-    - 
+        ]
+    -
       var catalog = [
           {link:"#",name:'Дымоходы'},{link:"#",name:'Дымососы'},
           {link:"#",name:'Печи для дома'},{link:"#",name:'Печи для бани'},
           {link:"#",name:'Камины'},{link:"#",name:'Селикат кальция'},
           {link:"#",name:'Котлы'},{link:"#",name:'Еще'},
         ]
-    - 
+    -
       var info = [
           {link:"#",name:'Каталог'},{link:"#",name:' Установка и монтаж'},
           {link:"#",name:'Отзывы'},{link:"#",name:'Ликвидация товара'},
@@ -53,10 +53,10 @@ html(lang="ru")
          {path:"../assets/images/6.jpg",img:6},
          {path:"../assets/images/7.jpg",img:7},
          {path:"../assets/images/8.jpg",img:8},
-       ]            
+       ]
     main
       include ../../components/header/header
-      block content      
+      block content
       include ../../components/footer/footer
     script(src="/assets/js/index.js")
     block scripts
